@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instructions: "
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="375dp"
+        android:layout_height="108dp"
+        android:justificationMode="inter_word"
+        android:text="This a simple mathematic games which  is believe can train your mind. Two numbers are given randomly based on your level choice with a mathematic operator. You just calculates the answer, write your answer and press check button. Every correct answer will give you 1 point and any wrong answer will deduct 1 point. "
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Level:"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:textStyle="bold" />
+
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/eb"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:text="Easy" />
+
+        <RadioButton
+            android:id="@+id/mb"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:text="Medium" />
+
+        <RadioButton
+            android:id="@+id/hb"
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:text="Hard" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="75dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/numb1"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/arithmetic"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textAlignment="center"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/numb2"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textAlignment="center"
+            android:textSize="50dp" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="288dp"
+        android:layout_height="67dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:hint="Your Answer"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="278dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:text="Check" />
+
+    <TextView
+        android:id="@+id/point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POINT : 0"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textColor="#EAAA00"/>
+
+</LinearLayout>
