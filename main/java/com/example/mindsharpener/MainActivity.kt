@@ -53,14 +53,18 @@ class MainActivity : AppCompatActivity() {
         mediumButton.setOnClickListener {
             val numbers = Random.nextInt(0, 99)
             val numbers1 = Random.nextInt(0, 99)
+            operatorNumber = Random.nextInt(3).toChar().toInt()
             number1.text = numbers.toString()
+            operator = operatorNumber.toChar()
             number2.text = numbers1.toString()
         }
 
         hardButton.setOnClickListener {
             val numbers = Random.nextInt(0, 999)
             val numbers1 = Random.nextInt(0, 999)
+            operatorNumber = Random.nextInt(3).toChar().toInt()
             number1.text = numbers.toString()
+            operator = operatorNumber.toChar()
             number2.text = numbers1.toString()
         }
     }
